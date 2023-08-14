@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>form </title>
+<style type="text/css">
+      .heading{
+                   height:100px;
+                   text-align:center;
+                   background-color:aqua;
+                   color:red;
+                   font-size:30px; 
+                   padding-top:8px;
+                   padding-bottom:10px;
+               }
+       .formsec{
+                  margin-left:auto;
+                  margin-right:auto;
+                  width:50%;
+       }        
+       .discription{
+                      color:brown;
+                      font-weight:bold;
+       }
+</style>
+</head>
+<body>
+       <section>
+            <div class ="heading">
+               <h1>This is a signup form</h1>
+            </div>
+            <div class="discription">
+                   <p>Enter the following details to login</p>
+            </div>
+       </section>
+       
+       <section class="formsec">
+            <div class="formsec">
+                 <form action ="dataconnect" method="get">
+                      <table>
+                              <tr>
+                                   <td>Name : </td>
+                                   <td><input type ="text" name ="name"></td>
+                              </tr>     
+                               
+                              <tr>
+                                   <td>Contacts :</td>
+                                   <td><input type ="number" name="contact"></td>
+                              </tr>
+                              
+                               <tr>
+                                   <td>Email :</td>
+                                   <td><input type ="text" name="email"></td>
+                              </tr>         
+                              
+                               <tr>
+                                   <td>Address :</td>
+                                   <td><input type ="text" name="address"></td>
+                              </tr>
+                             
+                              <tr>
+                                     <th><label>Gender :</label></th>
+                                     <th>
+                                          <input type ="radio" name ="Gender" id="Male" value="Male"><label>Male</label>
+                                          <input type ="radio" name ="Gender" id="Female" value="Female"><label>Female</label>
+                                          <input type ="radio" name ="Gender" id="Other" value="Other"><label>Other</label>  
+                                     </th>
+                              </tr>
+                              
+                              <tr>
+                                     <td><label>Hobbies </label></td>
+                                     <td>
+                                           <input type ="checkbox" name ="hobbies" id="cricket" value="cricket"><label>Cricket</label>
+                                           <input type ="checkbox" name ="hobbies" id="football" value="football"><label>Football</label>
+                                           <input type ="checkbox" name ="hobbies" id="swimming" value="swimming"><label>Swimming</label>           
+                                     </td>
+                              </tr>
+                              
+                                  
+                                  <tr>
+					                    <th><input type="submit" value="Submit" id="btn"></th>
+				                 </tr>
+				       
+                       </table>
+                 </form>
+            </div>     
+       </section>
+</body>
+</html>
